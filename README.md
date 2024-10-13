@@ -31,8 +31,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Difference between pages and layouts
 - Loading component
 - Not found page
+- Error page
 - Error handling
 - Image component and optimization
 - Server component vs. Client component
 - Font optimization
 - Static metadata
+- Data fetching
