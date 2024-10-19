@@ -1,4 +1,4 @@
-import Button from "@/components/button.component";
+import Button from "@/components/Button.component";
 import Link from "next/link";
 
 export const metadata = {

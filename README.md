@@ -38,3 +38,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Font optimization
 - Static metadata
 - Data fetching
+- Dynamic metadata
+- Progressive data loading
