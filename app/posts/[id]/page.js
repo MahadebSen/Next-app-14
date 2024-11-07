@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { getPostDetails } from "@/api/getPostDetails";
 import { getComments } from "@/api/getComments";
 import Comments from "@/components/Comments.component";
+import { getAllPost } from "@/api/getAllPost";
 
 //! dynamic metadata
 export const generateMetadata = async ({ params }) => {
@@ -36,6 +37,19 @@ const PostContent = async ({ params }) => {
       </Suspense>
     </div>
   );
+};
+
+// it is used to generate static paths for dynamic routes.
+// it is use for static site generation. (SSG)
+export const generateStaticParams = async () => {
+  const posts = await getAllPost();
+
+  return posts.map((post) => ({
+    params: {
+      id: post.id.toString(),
+    },
+  }));
+  // return posts.map((post) => `/posts/${post.id}`);
 };
 
 export default PostContent;

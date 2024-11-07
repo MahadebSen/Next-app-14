@@ -40,3 +40,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Data fetching
 - Dynamic metadata
 - Progressive data loading
+- SSR (Server Side Rendering)
+- SSG (Static Site Generation)
+- ISR (Incremental Static Regeneration)
